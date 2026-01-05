@@ -1,0 +1,374 @@
+/* =========================================================
+   GLOBAL STYLE
+========================================================= */
+body {
+    font-family: "Quicksand", Cormorant-Garamond;
+    margin: 0;
+    background: #f3f6fa;
+    color: #000000;
+}
+
+h1 {
+    color: #FFC857;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h3 {
+    color: #000;
+    font-size: 24px;
+}
+
+p, li {
+    line-height: 1.6;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+header {
+    background-image: url("header.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+header p {
+    font-weight: 800;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+nav {
+    background: #1f3b73;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #1b263b;
+}
+
+nav ul li a.active {
+    background: #1b263b;
+    color: #ffd700;
+}
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background: #F5F7FA;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.section-title {
+text-align: center;
+}
+
+/* =========================================================
+   CARD BERITA (untuk BERITA di Beranda)
+========================================================= */
+.card-berita-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.card-berita {
+    width: 300px;
+    height: 350px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-berita:hover {
+    transform: translateY(-6px);
+}
+
+.card-berita img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.card-berita h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-berita h3 a:visited {
+    color: black;
+}
+
+.card-berita p {
+    padding: 0 15px 15px 15px;
+    color: #555;
+}
+
+/* =========================================================
+   CARD BUKU (untuk KOLEKSI)
+========================================================= */
+.card-buku-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.card-buku {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card-buku:hover {
+    transform: translateY(-5px);
+}
+
+/* gambar buku TIDAK terpotong */
+.card-buku img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;  /* bukan cover */
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto    ;
+}
+
+/* =========================================================
+   SEARCH BAR
+========================================================= */
+.search-container {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* =========================================================
+   LAYANAN
+========================================================= */
+.layanan-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.layanan-box {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.layanan-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.layanan-icon {
+    width: 70px;
+    height: 70px;
+    background: #e8f0fe;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 32px;
+}
+
+.layanan-box h3 {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.layanan-box h3 a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.layanan-box h3 a:hover {
+    color: #1f3b73;
+}
+
+/* =========================================================
+   RECOMMENDED BOOKS SECTION
+========================================================= */
+.recommended-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recommended-header h3 {
+    margin: auto;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.see-all-link {
+    color: #1f3b73;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.see-all-link:hover {
+    text-decoration: underline;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.book-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.book-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.book-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.book-author {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .books-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .books-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .books-container {
+        grid-template-columns: 1fr;
+    }
+}

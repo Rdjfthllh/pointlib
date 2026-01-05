@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Perpustakaan Pustaka Point</h1>
+        <p>Bangun Wawasan, Mulai dari Satu Point</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="koleksi.html" class="active">Koleksi</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="berita.html">Berita</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="koleksi">
+            <h2 style="text-align: center; margin-bottom: 25px;">Koleksi Perpustakaan</h2>
+
+            <!-- SEARCH BAR -->
+            <div class="search-container">
+                <span class="search-icon">🔍</span>
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Cari koleksi..." 
+                    class="search-bar">
+            </div>
+
+            <!-- RECOMMENDED BOOKS -->
+            <div class="recommended-header">
+                <h3 class="section-title">Recommended</h3>
+            </div>
+
+            <div class="card-buku-container">
+                <div class="card-buku img">
+                    <img src="buku1.jpg" alt="" class="book-cover">
+                    <p class="book-title">Sebuah Seni Untuk Bersikap Bodo Amat</p>
+                    <p class="book-author">Mark Manson</p>
+                </div>
+
+                <div class="card-buku img">
+                    <img src="buku2.jpeg" alt="" class="book-cover">
+                    <p class="book-title">Negeri Para Bedebah</p>
+                    <p class="book-author">Tere liye</p>
+                </div>
+
+                <div class="card-buku img">
+                    <img src="buku3.jpeg" alt="" class="book-cover">
+                    <p class="book-title">Thinking, Fast and Slow</p>
+                    <p class="book-author">Daniel Kahneman</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontak">
+        <p>&copy; 2025 Pustaka Point | Email: info@perpustakaanpoint.id</p>
+    </footer>
+</body>
+</html>
